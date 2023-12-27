@@ -1,0 +1,188 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.signup-main {
+  height: auto;
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.signupRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupRight img {
+  width: 300px;
+}
+
+.signupLeft {
+  flex-direction: column;
+  display: flex;
+  width: 50%;
+  justify-content: start;
+  align-items: center;
+}
+
+.signup-top {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.signupClose {
+  position: absolute;
+  top: -15px;
+  right: -19px;
+}
+.signup-header {
+  position: absolute;
+  /* top: 5px; */
+  text-align: center;
+}
+.signup-header h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.signupLeft form {
+  width: 90%;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+}
+
+form .field {
+  width: 90%;
+  margin: 16px 0px;
+  border-bottom: 1px solid black;
+  padding: 7px 0px;
+}
+
+form .field i {
+  padding-right: 10px;
+}
+
+form .field input {
+  outline: none;
+  width: 85%;
+  border: none;
+}
+
+.signupBtn {
+  width: 90%;
+  padding: 9px;
+  background: #1a1919;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+}
+
+.countinue-with {
+  width: 90%;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.signup-options {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+.signup-options p {
+  font-size: 25px;
+  padding: 0px 13px;
+}
+
+@media (max-width: 768px) {
+  .signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+  }
+
+  .signup-main {
+    height: auto;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: auto auto;
+    border-radius: 10px;
+  }
+
+  .signupRight {
+    display: none;
+  }
+
+  .signupLeft {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .signupLeft form {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  form .field {
+    width: 100%;
+    padding: 15px 0px;
+    
+  }
+
+  form .field input {
+    outline: none;
+    width: 85%;
+    border: none;
+  }
+
+  .signupBtn {
+    width: 100%;
+    padding: 9px;
+    background: #1a1919;
+    color: #fff;
+    border: none;
+    margin-top: 15px;
+  }
+
+  .countinue-with {
+    width: 90%;
+    text-align: center;
+    margin: 10px 10px;
+  }
+  
+  .signup-options {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 10px 10px;
+  }
+  
+  .signup-options p {
+    font-size: 25px;
+    padding: 0px 13px;
+  }
+}

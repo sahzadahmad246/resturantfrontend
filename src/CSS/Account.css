@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Mukta", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-account {
+  width: 100%;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  height: 111vh;
+  position: relative;
+  padding: 10px;
+}
+
+.left-account {
+  width: 22%;
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  position: sticky;
+  left: 0; /* Stick to the left */
+}
+.left-item {
+  /* border-bottom: 1px solid rgb(105, 104, 104); */
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* height: auto; */
+}
+.active-item {
+  background-color: #e8f4ff;
+ 
+
+  color: #fff;
+}
+.active-item:hover{
+    background-color: #e8f4ff;
+}
+.left-item:hover {
+  background: rgb(241, 239, 239);
+}
+.left-item-text {
+  display: flex;
+  align-items: center;
+}
+.left-item-text i,
+p {
+  padding: 0px 10px;
+  color: rgb(37, 37, 37);
+  /* font-weight: 600; */
+  font-size: 20px;
+}
+.left-item-icon span {
+  rotate: 270deg;
+  /* font-weight: 600; */
+}
+.logout-in-account {
+  width: 50%;
+  margin: auto;
+  border: 1px solid rgb(247, 86, 86);
+  padding: 7px;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+}
+.logout-in-account i,
+.logout-btn {
+  padding: 0px 5px;
+  /* font-weight: 600; */
+  font-size: 18px;
+  color: red;
+}
+.right-account {
+  width: 78%;
+  height: 39em;
+  background: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 10px;
+  
+ 
+}
+
+
+@media only screen and (max-width: 767px) {
+ 
+  .main-account {
+    width: 100%;
+    display: flex;
+    font-family: "Times New Roman", Times, serif;
+    height: 111vh;
+    position: relative;
+    padding: 0px;
+    
+    flex-direction: column;
+  }
+  
+  .left-account {
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: auto; /* Add horizontal scrolling */
+    background: #fff;
+    box-shadow: none;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 0px;
+    display: flex;
+    /* flex-direction: column; Adjust to vertical flex-direction */
+    height: 50px;
+  }
+  .left-item {
+    
+    display: flex;
+    padding: 7px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    /* width: fit-content; */
+    /* height: auto; */
+    background: #fff;
+    border: 1px solid gray;
+    /* box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3); */
+  }
+  .active-item {
+    background-color: #e8f4ff;
+   
+  
+    color: #fff;
+  }
+  .active-item:hover{
+      background-color: #fff;
+  }
+  .left-item:hover {
+    background: rgb(241, 239, 239);
+  }
+  .left-item-text {
+    display: flex;
+    align-items: center;
+  }
+  .left-item-text i,
+  p {
+    padding: 0px 5px;
+    color: rgb(37, 37, 37);
+    /* font-weight: 600; */
+    font-size: 13px;
+  }
+  .left-item-icon span {
+    rotate: 270deg;
+    /* font-weight: 600; */
+    display: none;
+  }
+  .logout-in-account {
+    width: 35%;
+    margin:  20px auto;
+    border: 1px solid rgb(247, 86, 86);
+    /* padding: 7px; */
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .logout-in-account i,
+  .logout-btn {
+    padding: 0px 5px;
+    /* font-weight: 600; */
+    font-size: 18px;
+    color: red;
+  }
+  .right-account {
+    width: 95%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 10px auto;
+    
+   
+  }
+
+}
